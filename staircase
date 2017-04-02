@@ -1,0 +1,28 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main(){
+    int n,r,c,space; 
+    scanf("%d",&n);
+    
+   
+    for(r=1;r<=n;r++){
+    	for(space=0; space<n-r ;space++ ){
+    		printf(" ");
+		}
+    	
+    	
+    	
+    	for(c=1;c<=r;c++){
+    		printf("#");
+		}
+		printf("\n");
+	}
+    return 0;
+}
+
