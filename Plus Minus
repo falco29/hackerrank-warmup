@@ -1,0 +1,38 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main(){
+    int n;
+	int i,z=0;
+	float pos=0,neg=0,zero=0; 
+    scanf("%d",&n);
+    int arr[n];
+    for( i = 0;i < n;i++){
+       scanf("%d",&arr[i]);
+    }
+    while (z<n){
+    	if(arr[z]>0){
+    		pos++;
+    		
+		}
+		else if(arr[z]<0){
+			neg++;
+		}
+		else {
+			zero++;
+		}
+		z++;
+		
+		
+	}
+	printf("%f\n",pos/n);
+	printf("%f\n",neg/n);
+	printf("%f\n",zero/n);
+    return 0;
+}
+
