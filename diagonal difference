@@ -1,0 +1,44 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main(){
+    int n,sum1=0,sum2=0; 
+    scanf("%d",&n);
+    int a[n][n];
+    int i,j;
+    for( i = 0; i < n; i++){
+       for( j = 0; j < n; j++){
+          
+          scanf("%d",&a[i][j]);
+       }}
+    
+	
+	for( i =0; i<n; i++)
+	{
+	
+	sum1 += a[i][i];
+	}
+	j=1;
+	for( i =0; i<n; i++)
+	{
+		//row is i; column is n - i
+		 sum2 += a[i][n-j];
+		j++;
+	}
+   
+      int diff=sum1-sum2;
+    if(diff<0)
+      {
+      	diff *=-1;
+	  }
+        printf("%d",diff);
+    
+    return 0;
+
+   
+}
